@@ -64,7 +64,7 @@ public class PlayWordGrid
 		}
 		else
 		{
-			d = new Dictionary("files/diccionario.txt");
+			d = new Dictionary("files/dictionary.txt");
 		}
 		System.out.println();
 		System.out.println();
