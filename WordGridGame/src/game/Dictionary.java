@@ -18,7 +18,8 @@ public class Dictionary {
 	{
 		if (!s.equalsIgnoreCase("null"))
 		{
-			try {
+			try 
+			{
 				root = new Node();
 				System.out.println("Reading and saving dictionary, please be patient...");
 				File text = new File(s); 
