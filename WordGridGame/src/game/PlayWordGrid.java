@@ -43,7 +43,7 @@ import java.util.Scanner;
 */
 public class PlayWordGrid 
 {
-	static boolean GAME = true, RULES = true, FIRST = true;
+	static boolean RULES = true, FIRST = true;
 	static long START_TIME = 0, FINISH_TIME = 0;
 	static int TIME = 0, TIME_LIMIT = 0, BONUS = 0, SCORE_SUM = 0, WORDS_SUM = 0;
 	public static void main(String[] args) 
@@ -76,7 +76,7 @@ public class PlayWordGrid
 		int c = Integer.parseInt(columns);
 		TIME_LIMIT = (int) ((7000*(c + r)) / 1000);
 		WordGrid wg = new WordGrid(r,c);
-		while(GAME)
+		while(true)
 		{
 			while(RULES)
 			{
@@ -134,8 +134,8 @@ public class PlayWordGrid
 				}
 			}
 			FINISH_TIME = System.currentTimeMillis();
-	        TIME = TIME + (int) ((FINISH_TIME - START_TIME)/1000);
-	        if(TIME_LIMIT - TIME <= 0)
+	        	TIME = TIME + (int) ((FINISH_TIME - START_TIME)/1000);
+	        	if(TIME_LIMIT - TIME <= 0)
 			{
 				break;
 			}
